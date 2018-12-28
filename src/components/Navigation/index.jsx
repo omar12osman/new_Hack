@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
+import "./Navigation.scss";
+
 const Navigation = () => (
-  <div>
+  <div className="Navigation">
     <ul>
       <li>
         <Link to={ROUTES.SIGN_IN}>Sign In</Link>
       </li>
       <li>
-        <Link to={ROUTES.LANDING}>Landing</Link>
+        <Link to={ROUTES.LANDING}>Welcome</Link>
       </li>
       <li>
         <Link to={ROUTES.HOME}>Home</Link>
